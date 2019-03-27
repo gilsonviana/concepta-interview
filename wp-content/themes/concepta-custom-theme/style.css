@@ -1,0 +1,114 @@
+/*
+Theme Name: Concepta Custom Theme
+*/
+
+/**
+ * 1 - Default
+ */
+:root {
+	--ticket-list-font-primary: 'Lato', sans-serif;
+	--ticket-list-font-secondary: 'PT Serif', serif;	
+
+	--ticket-list-color-primary: #90caf9;
+	--ticket-list-color-dark: #0f0d1f;	
+	--ticket-list-color-grey: #55545f;		
+	--ticket-list-color-gradient-1: #06cfb2;
+	--ticket-list-color-gradient-2: #5362dc;
+}
+
+html, body {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+/**
+ * 2 - Reset
+ */
+body {    
+    margin: 0;        
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+/**
+ * 3 - Classes
+ */
+.d-grid {
+    display: grid;
+}
+
+/**
+ * 4 - Styling
+ */
+.site-main {
+    height: 100vh;
+    background: url('./assets/imgs/bkg.jpg') no-repeat center;
+    background-size: cover;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.ticket-main {
+    background: #fff;
+    grid-column-start: 2;    
+    grid-row-start: 2;
+    width: 540px;
+    border-radius: 4px;
+    padding: 5rem 3rem;
+}
+
+.ticket-main__form .form-group,
+.ticket-main__form .form-group-flex {
+    margin: 0 0 1rem;
+}
+
+.ticket-main__form .form-group-flex {
+    display: flex;
+}
+
+.ticket-main__form .form-group-flex .form-group {
+    flex: 1;
+}
+
+.ticket-main__form .form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.ticket-main__form .form-group-input {
+    border: 1px solid #ddd;
+    border-radius: 5px;    
+    margin: 0 1rem 0 0;
+}
+
+.ticket-main__form .form-group-input input {
+    padding: .5rem;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.ticket-main__form__submit {
+    display: block;
+    background: var(--ticket-list-color-primary);
+    padding: .8rem;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--ticket-list-color-grey);
+    cursor: pointer;
+    letter-spacing: .1rem;
+}

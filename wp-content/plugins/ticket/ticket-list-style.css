@@ -1,0 +1,29 @@
+.ticket-list {
+    text-align: center;
+}
+
+.ticket-list__details__item {
+    display: inline-flex;
+    flex-direction: column;
+    width: 400px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 1rem 1rem .3rem;
+    padding: .5rem 0;
+}
+
+.ticket-list__details__item__name {
+    font-weight: bold;
+}
+
+.ticket-list__details__item__photos {
+    list-style: none;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+span[class^="carousel-arrow"] {
+    cursor: pointer;
+}
