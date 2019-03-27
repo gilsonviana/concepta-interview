@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import PropTypes from 'prop-types'
+
 import Arrow from './Arrow';
 import CarouselImg from './CarouselImg'
 
@@ -20,6 +22,10 @@ const Carousel = ({ photos }) => {
             <Arrow direction="right" handleClick={nextImg} glyph="&#9654;"/>
 		</div>
     )
+}
+
+Carousel.propTypes = {
+    photos: PropTypes.arrayOf(PropTypes.object)
 }
 
 export default Carousel
